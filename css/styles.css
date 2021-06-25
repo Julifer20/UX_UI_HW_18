@@ -2,3 +2,111 @@
    width: 200px;
    height: auto;
 }
+
+.header {
+   height: 40px;
+   background-color: #56CCF2;
+}
+
+.pageTitle {
+   float: left;
+   padding: 10px 20px;
+}
+
+.navigation {
+   display: flex;
+   padding: 10px 20px;
+   justify-content: flex-end;
+}
+
+.navitem {
+   padding: 5px 20px;
+}
+
+.header {
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 300;
+}
+
+body {
+   margin: 0%;
+}
+
+.title {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 24px;
+}
+
+.recipeContainer {
+   margin: 24px;
+}
+
+.recipe {
+   border: 1px;
+   border-style: solid;
+   border-color: lightgrey;
+   display: flex;
+   margin: 0 15px 15px 0;
+}
+
+.recipeBox {
+   display: flex;
+   /*
+   border-color: lightgrey;*/
+   margin: 0 15px 15px 0;
+   justify-content: flex-start;
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+.recipeContent {
+   margin: 24px;
+   max-width: 300px;
+}
+
+button {
+   background-color: #F2C94C;
+   width: 100%;
+   font-size: 14px;
+   text-transform: uppercase;
+   border-radius: 8px;
+   border: 0;
+   height: 30px;
+   margin-top: 24px;
+}
+
+a {
+   color: black;
+   text-decoration: none;
+   padding: 0 8;
+   letter-spacing: 1px;
+}
+
+.footer {
+   height: 40px;
+   background-color: #56CCF2;
+   display: flex;
+   justify-content: center;
+}
+   
+.linkFah { 
+   height: 40px;
+   padding: 5px 16px;
+   display: flex;
+   justify-content: center;
+}
+
+/* I expect my first media query to turn the background color blue 
+when switching to mobile. I expect my second media query to 
+adjust so that the images do not stretch */
+
+@media screen and (orientation: portrait) {
+   body {
+     background-color: lightblue;
+   }
+   .recipeContainer {
+      width: 100%;
+      height: 100%; 
+      object-fit: contain;
+   }
+ }
